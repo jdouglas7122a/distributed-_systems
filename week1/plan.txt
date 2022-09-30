@@ -1,0 +1,13 @@
+Implament Cat Comms Network
+
+Plan: 
+
+Client Can Log In every day for a new Cat Fact
+Client Can Compare Cat Facts with other users to gain more
+
+Server uses Cat API: https://catfact.ninja/fact
+Server uses csv to store cat facts
+
+Whenever User Requests the cat fact of the day, checks to see if fact of the day has been pulled, if not, request today, write to csv
+
+
