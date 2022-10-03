@@ -80,7 +80,7 @@ class Module(Thread):
         #encoded = self._encryption.encrypt(content)
         #nwencoded = str(encoded).encode()
         #self._outgoing_buffer.put(nwencoded)
-        self._outgoing_buffer.put("RSPN: {}".format(content))
+        self._outgoing_buffer.put("RSPN{}".format(content))
 
     def _process_response(self):
         message = self._incoming_buffer.get()

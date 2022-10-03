@@ -3,9 +3,9 @@ import selectors
 import os
 import threading
 
-import CatServerLib
+import ServerLib
 
-class CatThreadedServer():
+class ThreadedServer():
     def __init__(self,host='127.0.0.1',port=10000):
         # old code set self._host = host
         self._host = socket.gethostbyname(socket.gethostname())
@@ -33,7 +33,7 @@ class CatThreadedServer():
         conn, addr = sock.accept()  # Should be ready to read
         print("Accepted connection from: ", addr)
         conn.setblocking(False)
-        module = SMTPServerLib.Module(conn, addr)
+        module = ServerLib.Module(conn, addr)
         self._modules.append(module)
         module.start()
 
