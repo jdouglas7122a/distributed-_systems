@@ -1,9 +1,7 @@
 import socket
 import selectors
-import SMTPClientLib
-import traceback
-
 import ClientLib
+import traceback
 
 class ThreadedClient ():
     def __init__(self, host="127.0.0.1", port=12345):

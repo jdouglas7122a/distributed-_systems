@@ -54,7 +54,7 @@ class ThreadedServer():
             self._selector.close()
 
 if __name__ == "__main__":
-    server = NWSThreadedServer()
+    server = ThreadedServer()
     server.run()
 
 
